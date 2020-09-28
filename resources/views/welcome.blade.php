@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
 
         <!-- Styles -->
         <style>
@@ -63,7 +64,7 @@
             }
         </style>
     </head>
-    <body>
+    <body class="bg-gray-800 text-white">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -80,7 +81,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md bg-gray-700">
                     Laravel
                 </div>
 

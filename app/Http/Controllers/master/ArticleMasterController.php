@@ -25,7 +25,7 @@ class ArticleMasterController extends Controller
      */
     public function index(Request $request)
     {
-        return $this->article = Article::all();
+        return $this->article = Article::orderBy('created_at', 'desc')->paginate(5);
     }
 
     /**
